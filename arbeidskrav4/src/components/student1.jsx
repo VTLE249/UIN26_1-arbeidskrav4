@@ -1,6 +1,6 @@
-import "./student1.css";
+import "./Student1.css";
 
-export default function student1() {
+export default function Student1() {
   return (
     <article>
       <img
@@ -15,7 +15,7 @@ export default function student1() {
         <a href="mailto:vthle@hiof.no">vthle@hiof.no</a>
       </p>
 
-      <p>Bachelor i informasjonssystemer</p>
+      <p>informasjonssystemer</p>
     </article>
   );
 }
