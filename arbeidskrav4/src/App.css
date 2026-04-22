@@ -182,3 +182,15 @@
     border-right-color: var(--border);
   }
 }
+
+.members-section {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  padding: 20px;
+  align-items: start;
+}
+
+.members-section h2 {
+  grid-column: 1 / -1;
+}

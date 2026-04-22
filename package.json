@@ -9,10 +9,12 @@
     "@testing-library/user-event": "^13.5.0",
     "react": "^19.2.5",
     "react-dom": "^19.2.5",
-    "react-scripts": "5.0.1",
+    "react-scripts": "^0.0.0",
+    "sanity": "^5.22.0",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
+    "dev": "concurrently \"npm run dev --prefix arbeidskrav4\" \"npm run dev --prefix uin-2026-1\"",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -35,5 +37,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "concurrently": "^9.2.1"
   }
 }
