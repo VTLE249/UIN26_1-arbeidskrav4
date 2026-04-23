@@ -14,6 +14,7 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
+    "predev": "npm install --prefix arbeidskrav4 && npm install --prefix uin-2026-1",
     "dev": "concurrently \"npm run dev --prefix arbeidskrav4\" \"npm run dev --prefix uin-2026-1\"",
     "start": "react-scripts start",
     "build": "react-scripts build",
