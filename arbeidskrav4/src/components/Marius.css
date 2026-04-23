@@ -1,0 +1,94 @@
+.marius-card {
+  display: grid;
+  gap: 1rem;
+
+  padding: 1.5rem;
+  max-width: 320px;
+
+  border-radius: 18px;
+
+  background: linear-gradient(145deg, #cea0ff, #ffffff);
+
+  box-shadow: 0 10px 25px rgba(123, 44, 191, 0.15);
+
+  border: 1px solid rgba(123, 44, 191, 0.1);
+
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.marius-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 16px 35px rgba(123, 44, 191, 0.25);
+}
+
+.marius-avatar {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+
+  border-radius: 14px;
+  object-fit: cover;
+
+  background-color: #ede9fe;
+
+  border: 2px solid #c77dff;
+
+  transition: transform 0.3s ease;
+}
+
+.marius-card:hover .marius-avatar {
+  transform: scale(1.03);
+}
+
+.marius-navn {
+  margin: 0;
+
+  font-size: 1.4rem;
+  font-weight: 600;
+
+  color: #4c1d95;
+}
+
+.marius-mail {
+  margin: 0;
+}
+
+.marius-mail a {
+  text-decoration: none;
+  font-size: 0.95rem;
+
+  color: #7b2cbf;
+
+  position: relative;
+}
+
+.marius-mail a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+
+  width: 0%;
+  height: 2px;
+
+  background: #7b2cbf;
+
+  transition: width 0.3s ease;
+}
+
+.marius-mail a:hover::after {
+  width: 100%;
+}
+
+.marius-studie {
+  margin: 0;
+
+  font-size: 0.95rem;
+  color: #6b7280;
+
+  background: #faf5ff;
+  padding: 0.4rem 0.6rem;
+
+  border-radius: 8px;
+
+  text-align: center;
+}
