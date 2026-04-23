@@ -1,5 +1,6 @@
 import Student1 from "./components/Student1";
 import Stephen from "./components/Stephen";
+import Marius from "./components/Marius";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
           <h2>Gruppemedlemmer</h2>
           <Student1 />
           <Stephen />
+          <Marius />
         </section>
       </main>
 
