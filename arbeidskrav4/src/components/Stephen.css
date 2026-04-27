@@ -11,10 +11,7 @@
   color: white;
 }
 
-.stephen-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 12px 30px rgba(102, 126, 234, 0.4);
-}
+
 
 .stephen-avatar {
   width: 140px;
