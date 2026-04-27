@@ -1,6 +1,8 @@
+import "./App.css";
 import Student1 from "./components/Student1";
 import Stephen from "./components/Stephen";
 import Marius from "./components/Marius";
+import Assignments from "./components/Assignments";
 
 function App() {
   return (
@@ -15,6 +17,11 @@ function App() {
           <Student1 />
           <Stephen />
           <Marius />
+        </section>
+
+        <section className="assignments-section">
+          <h2>Arbeidskrav fra Sanity</h2>
+          <Assignments />
         </section>
       </main>
 

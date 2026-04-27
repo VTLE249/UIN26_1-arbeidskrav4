@@ -183,14 +183,34 @@
   }
 }
 
-.members-section {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+.members-section,
+.assignments-section {
+  display: flex;
+  flex-wrap: wrap;
   gap: 20px;
   padding: 20px;
-  align-items: start;
 }
 
-.members-section h2 {
-  grid-column: 1 / -1;
+.members-section h2,
+.assignments-section h2 {
+  width: 100%;
+}
+
+.members-section > article,
+.assignments-section > article {
+  flex: 1 1 300px;
+}
+
+.assignment-card {
+  padding: 1.5rem;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: var(--accent-bg);
+  transition: all 0.3s ease;
+  text-align: left;
+}
+
+.assignment-card:hover {
+  border-color: var(--accent);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
